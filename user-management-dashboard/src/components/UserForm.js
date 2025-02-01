@@ -24,7 +24,7 @@ const UserForm = ({ isEdit }) => {
     e.preventDefault();
     const action = isEdit ? updateUser(id, user) : addUser(user);
 
-    action.then(() => navigate("/"))
+    action.then(() => navigate("#"))
           .catch(() => setError("Operation failed."));
   };
 
